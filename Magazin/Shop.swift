@@ -35,6 +35,7 @@ class Shop {
             addItemsFromStorage()
         }
     }
+    
     func sellTwo () {
         sell()
         sell()
@@ -46,6 +47,8 @@ class Shop {
         UserDefaults.standard.removeObject(forKey: "ShopStorage")
         UserDefaults.standard.set(items, forKey: "ShopShelf")
     }
+    
+    
 
     private func addItemsFromStorage() {
         if storage.isEmpty {
